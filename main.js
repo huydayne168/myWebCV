@@ -19,6 +19,10 @@ const projectsListWrapper = document.querySelector(
     ".projects-list__slider .wrapper"
 );
 
+const certificationsWrapper = document.querySelector(
+    "#certifications .wrapper"
+);
+
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 ///// Main things:
@@ -45,7 +49,7 @@ const projectsList = [
         img: "./asset/image/tra-xanh-bach-diep.png",
         time: "4/2023",
         languages: "HTML/CSS/Javascript",
-        desc: "Đây là một trang web giới thiệu về loại trà tại Hà Nội",
+        desc: "This is a website about introducing teas in Hanoi",
         sourceCode: "https://github.com/huydayne168/tra-xanh-bach-diep",
         liveLink: "https://huydayne168.github.io/tra-xanh-bach-diep/",
     },
@@ -54,7 +58,7 @@ const projectsList = [
         img: "./asset/image/chill-clock.png",
         time: "2/2023",
         languages: "HTML/CSS/Javascript",
-        desc: "Đây là một trang web hiện thị giờ cùngvới một vài tính năng như nghe nhạc bình thường hay chuyển màu trang web.",
+        desc: "This is a website that can be used as a clock with some theme to change and it also can play some music.",
         sourceCode: "https://github.com/huydayne168/online-clock",
         liveLink: "https://huydayne168.github.io/online-clock/",
     },
@@ -63,7 +67,7 @@ const projectsList = [
         img: "./asset/image/instagram-clone.png",
         time: "2/2023",
         languages: "HTML/CSS/Javascript",
-        desc: "Đây là một trang web clone lại giao diện của trang mạng xã hội nổi tiếng Instagram.",
+        desc: "This is a website that clones the interface of the famous social networking site Instagram.",
         sourceCode: "https://github.com/huydayne168/instagarm",
         liveLink: "https://huydayne168.github.io/instagarm/",
     },
@@ -72,7 +76,7 @@ const projectsList = [
         img: "./asset/image/pet-manager-app.png",
         time: "4/2023",
         languages: "HTML/CSS/Javascript",
-        desc: "Đây là một trang web quản lí thú cưng, trang web chủ yếu tập trung vào ngôn ngữ javascript.",
+        desc: "This is a pet management website that mainly focuses on the javascript language.",
         sourceCode: "https://github.com/huydayne168/pet-management-app",
         liveLink: "https://huydayne168.github.io/pet-management-app/",
     },
@@ -81,7 +85,7 @@ const projectsList = [
         img: "./asset/image/NewsAppImg.jpg",
         time: "5/2023",
         languages: "HTML/CSS/Javascript",
-        desc: "Đây là một trang web về đọc tin tức, có các chức năng như lấy các bài báo từ API, lọc báo, todo list, đăng kí, đăng nhập người dùng",
+        desc: "This is a website about reading news, with functions such as getting articles from API, filtering newspapers, todo list, registration, user login",
         sourceCode: "https://github.com/huydayne168/NewsApp",
         liveLink: " https://huydayne168.github.io/NewsApp/",
     },
@@ -90,7 +94,7 @@ const projectsList = [
         img: "./asset/image/Netflex.png",
         time: "6/2023",
         languages: "ReactJS",
-        desc: "Đây là một trang web về giao diện xem phim giống Netflix",
+        desc: "This is a website about watching movies like Netflix",
         liveLink: "https://netflex-filmwebsite.web.app",
         sourceCode: "https://github.com/huydayne168/Netflex-filmWebsite",
     },
@@ -98,7 +102,7 @@ const projectsList = [
         img: "./asset/image/BoutiqueShop.png",
         time: "7/2023",
         languages: "ReactJS",
-        desc: "Đây là một trang web bán hàng với các chức năng giỏ hàng, đăng nhập người dùng...",
+        desc: "This is a sales website with shopping cart functions, user login...",
         liveLink: "https://boutique-asm03.web.app/",
         sourceCode: "https://github.com/huydayne168/web-botique",
     },
@@ -148,6 +152,49 @@ projectsList.forEach((project, index) => {
 // declare projectsItems after rendering
 const projectsListItems = document.querySelectorAll(".projects-list__items");
 console.log(projectsListItems);
+
+//////////////////////////////////
+// Rendering Certifications
+const certificationArr = [
+    {
+        imgPath: "./asset/image/htmlcssCertification.jpg",
+        name: "HTML CSS certification at Funix",
+    },
+    {
+        imgPath: "./asset/image/javascript.jpg",
+        name: "Javascript certification at Funix",
+    },
+    {
+        imgPath: "./asset/image/reactjsCertification.jpg",
+        name: "ReactJS certification at Funix",
+    },
+    {
+        imgPath: "./asset/image/toeic.jpg",
+        name: "Toeic 2 skills: Listening and Reading | 810 points",
+    },
+];
+
+certificationArr.forEach((item, index) => {
+    certificationsWrapper.innerHTML += `
+    <div class="certification-list__items" data-img=${item.imgPath}>
+        <img
+            src=${item.imgPath}
+            alt="chill-clock"
+        />
+        <div class = "name">${item.name}</div>
+    </div>  
+    `;
+});
+
+const certificationItems = document.querySelectorAll(
+    ".certification-list__items"
+);
+
+// certification image pops up:
+certificationsWrapper.addEventListener("click", (e) => {
+    // if(e.target.className)
+    console.log(e.target.parentNode.className);
+});
 
 ////////// Slider:
 const sliderObject = {

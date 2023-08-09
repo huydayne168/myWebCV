@@ -539,7 +539,7 @@ header .introduction-content h2 {
 
 /* ========== Skills CSS ========== */
 #skills {
-    /* margin-bottom: 10rem; */
+    margin-bottom: 10rem;
     background-color: var(--primary-color);
 }
 
@@ -558,4 +558,41 @@ header .introduction-content h2 {
 #skills img {
     width: 100%;
     object-fit: contain;
+}
+
+/* ========== Certifications CSS ========== */
+#certifications .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.2rem;
+    align-items: stretch;
+}
+
+.certifications-list {
+    margin-top: 50px;
+}
+
+.certification-list__items {
+    padding: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.7px solid transparent;
+    border-radius: 1.6rem;
+}
+
+.certification-list__items:hover {
+    border: 1.7px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.certification-list__items img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.certification-list__items .name {
+    margin-top: 1.2rem;
 }
