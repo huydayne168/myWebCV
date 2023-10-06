@@ -540,24 +540,49 @@ header .introduction-content h2 {
 /* ========== Skills CSS ========== */
 #skills {
     margin-bottom: 10rem;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
 }
 
 #skills .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-around; */
     gap: 1.2rem;
 }
-
+/* 
 #skills .container > div {
     width: 12rem;
     padding: 0.4rem;
+} */
+
+.skills-list {
+    padding: 1.6rem;
+    padding-top: 4.8rem;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 1.2rem;
+}
+
+.skills-list > div {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #skills img {
-    width: 100%;
+    width: 10rem;
+    height: 10rem;
     object-fit: contain;
+}
+
+#skills img.expressjs,
+#skills img.mongodb {
+    width: 18rem;
+    height: 18rem;
 }
 
 /* ========== Certifications CSS ========== */
@@ -595,4 +620,9 @@ header .introduction-content h2 {
 
 .certification-list__items .name {
     margin-top: 1.2rem;
+}
+
+.tech-stacks {
+    /* text-decoration: underline; */
+    color: var(--primary-color);
 }

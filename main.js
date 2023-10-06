@@ -46,65 +46,111 @@ timeTreeItems.forEach((item) => loadItem.observe(item));
 ////////// Render Projects List:
 const projectsList = [
     {
-        img: "./asset/image/tra-xanh-bach-diep.png",
-        time: "4/2023",
-        languages: "HTML/CSS/Javascript",
-        desc: "This is a website about introducing teas in Hanoi",
-        sourceCode: "https://github.com/huydayne168/tra-xanh-bach-diep",
-        liveLink: "https://huydayne168.github.io/tra-xanh-bach-diep/",
+        name: "WOW WRAPS",
+        img: "./asset/image/wow-wraps.png",
+        time: "9/2023",
+        languages: [
+            "ReactJs",
+            "Typescript",
+            "NodeJs",
+            "ExpressJs",
+            "MongoDB",
+            "...",
+        ],
+        desc: "This is a food ordering website.It has client and admin website .Allow customer to order food, search for foods, read blogs.Allow admin to manage users, foods, flashsales, vouchers,...",
+        liveLink: "https://client-wow-wraps-tsx.vercel.app",
+        sourceCode: "https://github.com/huydayne168/client-wow-wraps-tsx",
     },
-
     {
-        img: "./asset/image/chill-clock.png",
-        time: "2/2023",
-        languages: "HTML/CSS/Javascript",
-        desc: "This is a website that can be used as a clock with some theme to change and it also can play some music.",
-        sourceCode: "https://github.com/huydayne168/online-clock",
-        liveLink: "https://huydayne168.github.io/online-clock/",
+        name: "WOW WRAPS ADMIN",
+        img: "./asset/image/wow-wraps-admin.png",
+        time: "9/2023",
+        languages: [
+            "ReactJs",
+            "Typescript",
+            "NodeJs",
+            "ExpressJs",
+            "MongoDB",
+            "...",
+        ],
+        desc: "This is a food ordering website.It has client and admin website .Allow customer to order food, search for foods, read blogs.Allow admin to manage users, foods, flashsales, vouchers,...",
+        liveLink: "https://admin-wow-wraps-tsx.vercel.app",
+        sourceCode: "https://github.com/huydayne168/admin-wow-wraps-tsx",
     },
-
     {
-        img: "./asset/image/instagram-clone.png",
-        time: "2/2023",
-        languages: "HTML/CSS/Javascript",
-        desc: "This is a website that clones the interface of the famous social networking site Instagram.",
-        sourceCode: "https://github.com/huydayne168/instagarm",
-        liveLink: "https://huydayne168.github.io/instagarm/",
+        name: "Booking",
+        img: "./asset/image/booking.png",
+        time: "9/2023",
+        languages: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "..."],
+        desc: "Hotel booking application with admin and client pages. This application allows admin users to manage hotel rooms and checkouts. Allow customers to log in and book hotel rooms",
+        liveLink: "https://booking-web-fe.web.app",
+        sourceCode: "https://github.com/huydayne168/booking-website-fe",
     },
-
     {
-        img: "./asset/image/pet-manager-app.png",
-        time: "4/2023",
-        languages: "HTML/CSS/Javascript",
-        desc: "This is a pet management website that mainly focuses on the javascript language.",
-        sourceCode: "https://github.com/huydayne168/pet-management-app",
-        liveLink: "https://huydayne168.github.io/pet-management-app/",
+        name: "Boutique",
+        img: "./asset/image/BoutiqueShop.png",
+        time: "7/2023",
+        languages: ["ReactJs"],
+        desc: "This is a sales website with shopping cart functions, user login...",
+        liveLink: "https://web-botique-reactjs.vercel.app/sign-up",
+        sourceCode: "https://github.com/huydayne168/web-botique",
     },
-
     {
-        img: "./asset/image/NewsAppImg.jpg",
-        time: "5/2023",
-        languages: "HTML/CSS/Javascript",
-        desc: "This is a website about reading news, with functions such as getting articles from API, filtering newspapers, todo list, registration, user login",
-        sourceCode: "https://github.com/huydayne168/NewsApp",
-        liveLink: " https://huydayne168.github.io/NewsApp/",
-    },
-
-    {
+        name: "Netflex",
         img: "./asset/image/Netflex.png",
         time: "6/2023",
-        languages: "ReactJS",
+        languages: ["ReactJs"],
         desc: "This is a website about watching movies like Netflix",
         liveLink: "https://netflex-filmwebsite.web.app",
         sourceCode: "https://github.com/huydayne168/Netflex-filmWebsite",
     },
     {
-        img: "./asset/image/BoutiqueShop.png",
-        time: "7/2023",
-        languages: "ReactJS",
-        desc: "This is a sales website with shopping cart functions, user login...",
-        liveLink: "https://boutique-asm03.web.app/",
-        sourceCode: "https://github.com/huydayne168/web-botique",
+        name: "News",
+        img: "./asset/image/NewsAppImg.jpg",
+        time: "5/2023",
+        languages: ["HTML", "CSS", "Javascript"],
+        desc: "This is a website about reading news, with functions such as getting articles from API, filtering newspapers, todo list, registration, user login",
+        sourceCode: "https://github.com/huydayne168/NewsApp",
+        liveLink: " https://huydayne168.github.io/NewsApp/",
+    },
+    {
+        name: "Pets",
+
+        img: "./asset/image/pet-manager-app.png",
+        time: "4/2023",
+        languages: ["HTML", "CSS", "Javascript"],
+        desc: "This is a pet management website that mainly focuses on the javascript language.",
+        sourceCode: "https://github.com/huydayne168/pet-management-app",
+        liveLink: "https://huydayne168.github.io/pet-management-app/",
+    },
+    {
+        name: "Instagram",
+
+        img: "./asset/image/instagram-clone.png",
+        time: "2/2023",
+        languages: ["HTML", "CSS", "Javascript"],
+        desc: "This is a website that clones the interface of the famous social networking site Instagram.",
+        sourceCode: "https://github.com/huydayne168/instagarm",
+        liveLink: "https://huydayne168.github.io/instagarm/",
+    },
+    {
+        name: "Chill Clock",
+
+        img: "./asset/image/chill-clock.png",
+        time: "2/2023",
+        languages: ["HTML", "CSS", "Javascript"],
+        desc: "This is a website that can be used as a clock with some theme to change and it also can play some music.",
+        sourceCode: "https://github.com/huydayne168/online-clock",
+        liveLink: "https://huydayne168.github.io/online-clock/",
+    },
+    {
+        name: "Trà xanh Bách Diệp",
+        img: "./asset/image/tra-xanh-bach-diep.png",
+        time: "4/2023",
+        languages: ["HTML", "CSS", "Javascript"],
+        desc: "This is a website about introducing teas in Hanoi",
+        sourceCode: "https://github.com/huydayne168/tra-xanh-bach-diep",
+        liveLink: "https://huydayne168.github.io/tra-xanh-bach-diep/",
     },
 ];
 
@@ -127,7 +173,12 @@ projectsList.forEach((project, index) => {
                 ${project.time}
             </div>
             <div class="language">
-                ${project.languages}
+                ${project.name}
+            </div>
+            <div >
+                Techstacks: <span class= "tech-stacks">${project.languages.join(
+                    ", "
+                )}</span>
             </div>
             <p class="desc">
                 ${project.desc}
