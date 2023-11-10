@@ -46,6 +46,23 @@ timeTreeItems.forEach((item) => loadItem.observe(item));
 ////////// Render Projects List:
 const projectsList = [
     {
+        name: "WOW WRAPS ADMIN V2",
+        img: "./asset/image/wow-wraps-admin-v2.png",
+        time: "9/2023",
+        languages: [
+            "ReactJs",
+            "Typescript",
+            "NodeJs",
+            "ExpressJs",
+            "MongoDB",
+            "SocketIO",
+            "...",
+        ],
+        desc: "This is a the version 2 of the wow wraps' admin. I updated the UI to make my web more consistence and also I built the chat box for both admin and client!",
+        liveLink: "https://wow-wrap-admin-v2.vercel.app",
+        sourceCode: "https://github.com/huydayne168/wow-wrap-admin.v2",
+    },
+    {
         name: "WOW WRAPS",
         img: "./asset/image/wow-wraps.png",
         time: "9/2023",
