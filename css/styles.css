@@ -585,6 +585,11 @@ header .introduction-content h2 {
     height: 18rem;
 }
 
+#skills img.postgresql {
+    width: 18rem;
+    height: 18rem;
+}
+
 /* ========== Certifications CSS ========== */
 #certifications .wrapper {
     display: flex;
