@@ -226,15 +226,23 @@ console.log(projectsListItems);
 const certificationArr = [
     {
         imgPath: "./asset/image/htmlcssCertification.jpg",
-        name: "HTML CSS certification at Funix",
+        name: "HTML CSS Certificate at Funix",
     },
     {
         imgPath: "./asset/image/javascript.jpg",
-        name: "Javascript certification at Funix",
+        name: "Javascript Certificate at Funix",
     },
     {
         imgPath: "./asset/image/reactjsCertification.jpg",
-        name: "ReactJS certification at Funix",
+        name: "ReactJS Certificate at Funix",
+    },
+    {
+        imgPath: "./asset/image/NodeJsCertifiacte.jpg",
+        name: "NodeJs Certificate at Funix",
+    },
+    {
+        imgPath: "./asset/image/FUN230271_CCDN.jpg",
+        name: "Web Fullstack Developer Certificate Funix",
     },
     {
         imgPath: "./asset/image/toeic.jpg",
